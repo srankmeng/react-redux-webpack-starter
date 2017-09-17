@@ -3,9 +3,8 @@ const path = require('path')
 const autoprefixer = require('autoprefixer')
 
 module.exports = {
-  devtool: 'eval',
-  // entry: './src/index.js',
-  entry: path.join(__dirname, 'src', 'index.js'),
+  devtool: '#inline-source-map',
+  entry: './src/index.js',
   output: {
     publicPath: '/public/static/',
     path: path.join(__dirname, 'public', 'static'),
